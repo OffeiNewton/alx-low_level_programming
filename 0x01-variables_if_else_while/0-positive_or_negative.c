@@ -22,5 +22,6 @@ int main(void)
 		printf("is zero\n");
 	else
 		printf("is negetive\n");
+	printf("\n")
 	return (0);
 }
