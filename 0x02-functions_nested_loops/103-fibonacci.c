@@ -5,17 +5,11 @@
  *
  * Return: Always 0
  */
+
 int main(void)
 {
-	int num1;
-	int num2;
-	int sum;
-	int next;
+	int num1 = 1, num2 = 2, next, sum = 2;
 
-	num1 = 1;
-	num2 = 2;
-	next;
-	sum = 2;
 	while (num2 <= 4000000)
 	{
 		next = num1 + num2;
