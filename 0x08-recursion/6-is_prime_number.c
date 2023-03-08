@@ -10,7 +10,7 @@ int check_prime(int n, int div)
 	if (n == div)
 		return (1);
 	if (n % div == 0)
- 		return (0);
+		return (0);
 	return (check_prime(n, div + 1));
 }
 
