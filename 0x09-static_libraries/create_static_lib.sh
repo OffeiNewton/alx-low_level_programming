@@ -1,3 +1,13 @@
 #!/bin/bash
-gcc -c *.c           # Compile all the .c files into .o object files
-ar rcs liball.a *.o  # Create the static library from the .o files
+
+# Compile all .c files into object files
+gcc -Wall -Werror -Wextra -pedantic -c *.c
+
+# Create static library from object files
+ar -rc liball.a *.o
+
+# Index static library
+ranlib liball.a
+
+# Remove object files
+rm *.o
