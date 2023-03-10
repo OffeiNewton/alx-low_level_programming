@@ -1,10 +1,3 @@
 #!/bin/bash
-
-# Compile all .c files into object files
-gcc -c *.c
-
-# Create the static library
-ar rcs liball.a *.o
-
-# Clean up object files
-rm *.o
+gcc -c *.c           # Compile all the .c files into .o object files
+ar rcs liball.a *.o  # Create the static library from the .o files
