@@ -2,10 +2,11 @@
 #include<stdio.h>
 
 /**
- * _puts - Prints a string to stdout.
- * @str: The string to be printed.
+ * main - Entry point for the program
  *
- * Return: None.
+ * This function prints a string to stdout.
+ *
+ * Return: 0 on success
  */
 
 int main(void)
