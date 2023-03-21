@@ -1,0 +1,1 @@
+ C structures are composite data types that can group related data items under a single name, making it easier to organize and access them. Typedefs, on the other hand, allow programmers to create aliases for existing data types, which can help improve code readability and make it easier to modify the underlying data type in the future.
