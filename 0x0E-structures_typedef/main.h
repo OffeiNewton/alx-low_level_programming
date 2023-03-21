@@ -1,6 +1,9 @@
 #ifndef MY_HEADER_H
 #define MY_HEADER_H
 
+#include <stdio.h>
+#include "dog.h"
+
 /* Header contents go here */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
