@@ -2,11 +2,12 @@
 #include <stddef.h>
 
 /**
- * get_op_func - selects the correct function to perform the operation asked by the user.
+ * get_op_func - selects the correct function to perform the operation
  * @s: operator passed as argument to the program.
  *
- * Return: pointer to the function that corresponds to the operator given as a parameter.
- *         NULL if s does not match any of the 5 expected operators (+, -, *, /, %).
+ * Return: pointer to the function that corresponds to the operator
+ *         NULL if s does not match any of the 5 expected operators
+ *         (+, -, *, /, %).
  */
 int (*get_op_func(char *s))(int, int)
 {
