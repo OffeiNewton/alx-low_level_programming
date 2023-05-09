@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	/* opens the file_from for reading */
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]), exit(98);
 
 	/* opens the file_to for writing (truncate if already exists) */
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	do {
 		read_count = read(fd_from, buf, 1024);
 		if (read_count == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+			dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]), exit(98);
 		write_count = write(fd_to, buf, read_count);
 		if (write_count == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
