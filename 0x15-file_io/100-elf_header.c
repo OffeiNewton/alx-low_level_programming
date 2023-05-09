@@ -268,7 +268,7 @@ void close_elf(int elf)
  * Return: returns 0 on success.
  *
  * Description: If the file isn't an ELF File or
- * the function fails - exit code 98.
+ * if the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
